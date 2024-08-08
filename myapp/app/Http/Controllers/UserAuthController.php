@@ -10,4 +10,11 @@ class UserAuthController extends Controller
     {
         return 123456;
     }
+    public function Signup()
+    {
+        $binding = [
+            "title" => '註冊'
+        ];
+        return view('auth.signup',$binding);
+    }
 }
