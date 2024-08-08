@@ -8,12 +8,16 @@ class UserAuthController extends Controller
 {
     public function Login()
     {
-        return view('auth.login');
+        $binding = [
+        'title' => '登入頁面'
+        ];
+        return view('auth.login',$binding);
+        
     }
     public function Signup()
     {
         $binding = [
-            "title" => '註冊'
+            "title" => '註冊頁面'
         ];
         return view('auth.signup',$binding);
     }

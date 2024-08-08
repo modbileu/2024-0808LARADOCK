@@ -1,6 +1,6 @@
 <!-- 指定繼承 layout.master 母模板 --> 
 @extends('layout.master') 
-
+@section('title',$title)
 <!-- 傳送資料到母模板，並指定變數為 title --> 
 <!-- 傳送資料到母模板，並指定變數為 content -->
 @section('content') 

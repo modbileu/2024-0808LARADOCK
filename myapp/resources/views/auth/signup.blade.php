@@ -1,6 +1,6 @@
 <!-- 指定繼承 layout.master 母模板 --> 
 @extends('layout.master') 
-
+@section('title',$title)
 <!-- 傳送資料到母模板，並指定變數為 title --> 
 <!-- 傳送資料到母模板，並指定變數為 content -->
 @section('content') 
@@ -33,7 +33,7 @@
 								</div>
 
 								<div class="col-12 form-group">
-									<label for="register-form-username">密碼::</label>
+									<label for="register-form-username">密碼:</label>
 									<input type="text" id="register-form-username" name="register-form-username" value="" class="form-control">
 								</div>
 
@@ -42,7 +42,7 @@
 									<input type="text" id="register-form-phone" name="register-form-phone" value="" class="form-control">
 								</div>
 								<div class="col-12 form-group">
-									<button class="button button-3d button-black m-0" id="register-form-submit" name="register-form-submit" value="register">Register Now</button>
+									<button class="button button-3d button-black m-0" id="register-form-submit" name="register-form-submit" value="register">開始註冊</button>
 								</div>
 							</form>
 						</div>
