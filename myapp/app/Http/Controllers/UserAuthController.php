@@ -8,7 +8,7 @@ class UserAuthController extends Controller
 {
     public function Login()
     {
-        return 123456;
+        return view('auth.login');
     }
     public function Signup()
     {
