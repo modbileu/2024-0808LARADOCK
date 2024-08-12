@@ -36,11 +36,25 @@
 									<label for="register-form-username">密碼:</label>
 									<input type="text" id="register-form-username" name="register-form-username" value="" class="form-control">
 								</div>
-
 								<div class="col-12 form-group">
-									<label for="register-form-phone">帳號類型:</label>
-									<input type="text" id="register-form-phone" name="register-form-phone" value="" class="form-control">
-								</div>
+										<label>帳號類型:</label><br>
+										<div class="form-check form-check-inline">
+											@if (old('type') == 'G')
+											<input class="form-check-input" type="radio" name="type"id="type" value="G" checked>
+											@else
+											<input class="form-check-input" type="radio" name="type"id="type" value="G">
+											@endif
+											<label class="form-check-label text-transform-none" for="type">一般會員</label>
+										</div>
+										<div class="form-check form-check-inline">
+											@if (old('type') == 'A')
+											<input class="form-check-input" type="radio" name="type"id="type" value="A" checked>
+											@else
+											<input class="form-check-input" type="radio" name="type"id="type" value="A">
+											@endif
+											<label class="form-check-label text-transform-none" for="type">管理者</label>
+										</div>
+									</div>
 								<div class="col-12 form-group">
 									<button class="button button-3d button-black m-0" id="register-form-submit" name="register-form-submit" value="register">開始註冊</button>
 								</div>
