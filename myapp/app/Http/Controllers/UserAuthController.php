@@ -34,6 +34,8 @@ class UserAuthController extends Controller
             ->withInput()
             ->withErrors(['無此帳號','帳號密碼錯誤']);
         }
+        // $form_data = request()->all();
+        // dd($form_data);
     }
 
     public function Signup()

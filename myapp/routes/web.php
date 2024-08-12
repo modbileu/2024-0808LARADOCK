@@ -12,5 +12,6 @@ Route::group(['prefix'=> 'user'], function () {
         Route::post('login','App\Http\Controllers\UserAuthController@LoginProcess');
         Route::get('signup', 'App\Http\Controllers\UserAuthController@Signup');
         Route::post('signup','App\Http\Controllers\UserAuthController@SignupProcess');
+        Route::get('home','App\Http\Controllers\UserAuthController@Home');
     });
 });

@@ -9,6 +9,7 @@
 		============================================= -->
 		<section id="content">
 			<div class="content-wrap">
+			@include('components.errorMessage')
 				<div class="container">
 					<div class="accordion accordion-lg mx-auto mb-0" style="max-width: 550px;">
 						<div class="accordion-header">
@@ -24,8 +25,8 @@
 							<form class="row" action="/user/auth/login" method="post">
 								@csrf
 								<div class="col-12 form-group">
-									<label for="login-form-username">使用者:</label>
-									<input type="text" id="nickname" name="nickname" value="" class="form-control">
+									<label for="login-form-email">使用者信箱:</label>
+									<input type="text" id="email" name="email" value="" class="form-control">
 								</div>
 
 								<div class="col-12 form-group">

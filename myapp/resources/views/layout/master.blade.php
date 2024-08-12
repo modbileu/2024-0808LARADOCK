@@ -61,12 +61,17 @@
 								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
 							</button>
 						</div>
-
 						<!-- Primary Navigation
 						============================================= -->
 						<nav class="primary-menu">
 
 							<ul class="menu-container">
+								@if (session() -> has('user_id'))
+								<li class="meun-item">
+									<a class="menu-link" href = "index.html"><div>登出</div></a>
+								</li>
+								@endif
+
 								<li class="menu-item">
 									<a class="menu-link" href="index.html"><div>主頁</div></a>
 									<ul class="sub-menu-container">
@@ -147,7 +152,6 @@
 						<form class="top-search-form" action="search.html" method="get">
 							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
 						</form>
-
 					</div>
 				</div>
 			</div>
@@ -164,9 +168,8 @@
 
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li class="breadcrumb-item"><a href="#">Templates</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Login &amp; Register 3</li>
+							<li class="breadcrumb-item"><a href="#">登入</a></li>
+							<li class="breadcrumb-item"><a href="#">註冊</a></li>
 						</ol>
 					</nav>
 
