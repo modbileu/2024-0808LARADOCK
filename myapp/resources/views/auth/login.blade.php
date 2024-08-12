@@ -20,16 +20,17 @@
 								    登入帳號
 							    </div>
 						    </div>
-						<div class="accordion-content">
-							<form id="login-form" name="login-form" class="row mb-0" action="#" method="post">
+						<div>
+							<form class="row" action="/user/auth/login" method="post">
+								@csrf
 								<div class="col-12 form-group">
 									<label for="login-form-username">使用者:</label>
-									<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control">
+									<input type="text" id="nickname" name="nickname" value="" class="form-control">
 								</div>
 
 								<div class="col-12 form-group">
 									<label for="login-form-password">密碼:</label>
-									<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control">
+									<input type="password" id="password" name="password" value="" class="form-control">
 								</div>
 
 								<div class="col-12 form-group">

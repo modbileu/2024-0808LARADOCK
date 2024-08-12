@@ -21,7 +21,7 @@
 								新用戶:去註冊一個吧
 							</div>
 						</div>					
-						<div class="accordion-content">
+						<div>
 							<form class="row" action="/user/auth/signup" method="post">
 								@csrf
 								<div class="col-12 form-group">
