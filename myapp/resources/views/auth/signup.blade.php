@@ -9,6 +9,7 @@
 		============================================= -->
 		<section id="content">
 			<div class="content-wrap">
+			@include('components.errorMessage')
 				<div class="container">
 					<div class="accordion accordion-lg mx-auto mb-0" style="max-width: 550px;">
 						<div class="accordion-header">
@@ -19,7 +20,7 @@
 							<div class="accordion-title">
 								新用戶:去註冊一個吧
 							</div>
-						</div>
+						</div>					
 						<div class="accordion-content">
 							<form class="row" action="/user/auth/signup" method="post">
 								@csrf
