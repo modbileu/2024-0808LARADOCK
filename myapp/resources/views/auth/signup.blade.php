@@ -21,20 +21,21 @@
 							</div>
 						</div>
 						<div class="accordion-content">
-							<form id="register-form" name="register-form" class="row mb-0" action="#" method="post">
+							<form class="row" action="/user/auth/signup" method="post">
+								@csrf
 								<div class="col-12 form-group">
 									<label for="register-form-name">暱稱:</label>
-									<input type="text" id="register-form-name" name="register-form-name" value="" class="form-control">
+									<input type="text" id="nickname" name="nickname" value="" class="form-control">
 								</div>
 
 								<div class="col-12 form-group">
 									<label for="register-form-email">email:</label>
-									<input type="text" id="register-form-email" name="register-form-email" value="" class="form-control">
+									<input type="text" id="email" name="email" value="" class="form-control">
 								</div>
 
 								<div class="col-12 form-group">
 									<label for="register-form-username">密碼:</label>
-									<input type="text" id="register-form-username" name="register-form-username" value="" class="form-control">
+									<input type="text" id="password" name="password" value="" class="form-control">
 								</div>
 								<div class="col-12 form-group">
 										<label>帳號類型:</label><br>
