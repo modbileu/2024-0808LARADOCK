@@ -167,7 +167,6 @@
         <section class="page-title bg-transparent">
 			<div class="container">
 				<div class="page-title-row">
-
 					<div class="page-title-content">
 						<h1>我的帳號</h1>
 					</div>

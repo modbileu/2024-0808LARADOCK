@@ -16,3 +16,11 @@ Route::group(['prefix'=> 'user'], function () {
         Route::get('home','App\Http\Controllers\UserAuthController@Home');
     });
 });
+
+Route::group(['prefix'=> 'merchandise'], function () {
+    Route::get('create', 'App\Http\Controllers\MerchandiseController@MerchandiseCreate');
+
+    Route::group(['prefix' => '{merchandise_id}'], function () {
+        Route::get('edit', 'App\Http\Controllers\MerchandiseController@MerchandiseEdit');
+    });
+});

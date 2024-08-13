@@ -76,6 +76,7 @@ class UserAuthController extends Controller
                 'nickname' => $form_data['nickname'],
             ]);
         //dd($user);
+            return redirect('/user/auth/login');
         }
     }
 }
