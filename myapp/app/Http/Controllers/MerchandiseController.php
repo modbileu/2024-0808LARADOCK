@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 
 use App\Shop\Entity\Merchandise;
+use Image;
 
 class MerchandiseController extends Controller
 {   

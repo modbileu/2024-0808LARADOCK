@@ -13,8 +13,7 @@
                       method="post"
                       enctype="multipart/form-data"
                 >
-                    {{-- 隱藏方法欄位 --}}
-                    {{ method_field('PUT') }}  <!--這行是可以刪掉的只是要把put改成post-->
+                    @csrf
 
                     <div class="form-group">
                         <label for="type">狀態欄</label>
@@ -106,9 +105,6 @@
                         >
                     </div>
                     <button type="submit" class="button-3d button-black m-0">更新</button>
-                    {{-- CSRF 欄位--}}
-                    @csrf
-                </form>
             </div>
         </div>
     </div>
