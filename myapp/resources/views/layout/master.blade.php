@@ -79,7 +79,7 @@
 								</li>
 								@endif
 								<li class="menu-item">
-									<a class="menu-link" href="index.html"><div>主頁</div></a>
+									<a class="menu-link" href="{{route('user.auth.home')}}"><div>主頁</div></a>
 									<ul class="sub-menu-container">
 										<li class="menu-item">
 											<a class="menu-link" href="niche-demos.html"><div>Niche Demos</div></a>
@@ -163,16 +163,6 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
-
-        <section class="page-title bg-transparent">
-			<div class="container">
-				<div class="page-title-row">
-					<div class="page-title-content">
-						<h1>我的帳號</h1>
-					</div>
-				</div>
-			</div>
-		</section><!-- .page-title end -->
 
         @yield('content')
 

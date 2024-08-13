@@ -17,6 +17,15 @@ class UserAuthController extends Controller
         
     }
 
+    public function Home()
+    {
+        $binding = [
+        'title' => '綠盾油漆'
+        ];
+        return view('auth.home',$binding);
+        
+    }
+
     public function SignOut()
     {
         session()->forget('user_id');
