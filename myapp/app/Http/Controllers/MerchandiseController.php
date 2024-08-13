@@ -1,15 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 
 use App\Shop\Entity\Merchandise;
 use Image;
 
 class MerchandiseController extends Controller
-{   
-    public function MerchandiseCreate()
-    {
+{
+    public function MerchandiseCreate(){
+        
         // 建立商品基本資訊
         $merchandise_data = [
             'status'          => 'C',   // 建立中
@@ -22,16 +23,14 @@ class MerchandiseController extends Controller
             'remain_count'    => 0,     // 商品剩餘數量
         ];
         $Merchandise = Merchandise::create($merchandise_data);
-
+        
         // 重新導向至商品編輯頁
         return redirect('/merchandise/' . $Merchandise->id . '/edit');
     }
-
-
     public function MerchandiseEdit($merchandise_id)
     {
-        $Merchandise = Merchandise::where('id', $merchandise_id)->first();
-        $binding = [
+        $Merchandise = Merchandise::where('id', $merchandise_id)->first();    //抓Merchandise裡面的$merchandise_id帶入到'id'裡面
+        $binding = [                                    //在edit.blade.php裡面的<h1>{{ $title }}</h1>
             'title' => '編輯商品',
             'Merchandise' => $Merchandise,
         ];
