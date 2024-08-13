@@ -68,10 +68,16 @@
 							<ul class="menu-container">
 								@if (session() -> has('user_id'))
 								<li class="meun-item">
-									<a class="menu-link" href = "index.html"><div>登出</div></a>
+									<a class="menu-link" href = "{{route('user.auth.signout')}}"><div>登出</div></a>
+								</li>
+								@else
+								<li>
+									<a class="menu-link" href = "{{route('user.auth.login')}}"><div>登入</div></a>
+								</li>
+								<li>
+									<a class="menu-link" href = "{{route('user.auth.signup')}}"><div>註冊</div></a>
 								</li>
 								@endif
-
 								<li class="menu-item">
 									<a class="menu-link" href="index.html"><div>主頁</div></a>
 									<ul class="sub-menu-container">
@@ -165,14 +171,6 @@
 					<div class="page-title-content">
 						<h1>我的帳號</h1>
 					</div>
-
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">登入</a></li>
-							<li class="breadcrumb-item"><a href="#">註冊</a></li>
-						</ol>
-					</nav>
-
 				</div>
 			</div>
 		</section><!-- .page-title end -->

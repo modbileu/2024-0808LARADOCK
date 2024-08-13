@@ -17,6 +17,14 @@ class UserAuthController extends Controller
         
     }
 
+    public function SignOut()
+    {
+        session()->forget('user_id');
+        // session()->forget('user_id');
+        session()->flush();
+        return redirect('/user/auth/login');
+    }
+
     public function LoginProcess()
     {
         $form_data = request()->all();
