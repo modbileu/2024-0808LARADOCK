@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Middleware\AuthUserAdminMiddleware;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -18,9 +18,10 @@ Route::group(['prefix'=> 'user'], function () {
 });
 
 Route::group(['prefix'=> 'merchandise'], function () {
-    Route::get('create', 'App\Http\Controllers\MerchandiseController@MerchandiseCreate');
+    Route::get('create', 'App\Http\Controllers\MerchandiseController@MerchandiseCreate')->middleware(AuthUserAdminMiddleware::class);
 
     Route::group(['prefix' => '{merchandise_id}'], function () {
-        Route::get('edit', 'App\Http\Controllers\MerchandiseController@MerchandiseEdit');
+        Route::get('edit', 'App\Http\Controllers\MerchandiseController@MerchandiseEdit')->middleware(AuthUserAdminMiddleware::class);
+        Route::put('/', 'App\Http\Controllers\MerchandiseController@MerchandiseEditProcess');
     });
 });
