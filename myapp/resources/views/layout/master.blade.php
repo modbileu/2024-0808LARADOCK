@@ -48,8 +48,7 @@
 						============================================= -->
 						<div id="logo">
 							<a href="index.html">
-								<img class="logo-default" srcset="{{asset('assets/greensheiled/logo.png')}}, {{asset('assets/greensheiled/logo.png')}} 2x" src="/assets/greensheiled/logo.png" alt="Canvas Logo">
-								<img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x" src="images/logo-dark@2x.png" alt="Canvas Logo">
+								<img class="logo-default" src="{{ asset('assets/greensheiled/logo.png')}}" alt="Canvas Logo">
 							</a>
 						</div><!-- #logo end -->
 						<div class="header-misc">
