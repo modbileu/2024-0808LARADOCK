@@ -2,14 +2,44 @@
 
 @section('content')
 <section id="content">
-			<div class="content-wrap pt-0">
 
+		<div id="wrapper">
+			<section class="page-title bg-transparent">
+				<div class="container">
+					<div class="page-title-row">
+
+						<div class="page-title-content">
+							<h1>My Account</h1>
+						</div>
+
+						<nav aria-label="breadcrumb">
+							<ul class="breadcrumb">
+								@if ( session()->has('user_id'))
+									<li class="breadcrumb-item"><a href="{{route('user.auth.signout')}}"><div>登出</div></a></li>
+								@else
+									<li>
+										<a class="breadcrumb-item"><a href="{{route('user.auth.signup')}}"><div>註冊</div></a>
+									</li>
+									<li>
+										<a class="breadcrumb-item"><a href="{{route('user.auth.login')}}"><div>登入</div></a>
+									</li>
+								</ul>
+								@endif 
+						</nav>
+					
+					</div>
+				</div>
+			</section>
+		</div>
+
+			<div class="content-wrap pt-0">
+		
 				<div class="section m-0" style="background-color: #eef2f5;">
 					<div class="container">
 
 						<div class="heading-block text-center border-bottom-0 mb-5 mt-4 mx-auto" style="max-width: 640px">
-							<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 36px;">What we Do</h3>
-							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur dolorum, voluptatum possimus temporibus vel ab, nesciunt quod!</span>
+							<h1 class="text-transform-none font-secondary fw-normal" style="font-size: 50px;">公司宗旨:</h1>
+							<span><p>我們公司的宗旨為:讓顧客使用 <strong>最安全</strong>, <strong>無毒</strong> &amp; <strong>無添加</strong> 的健康油漆。</p></span>
 						</div>
 
 						<!-- Features colomns
@@ -18,7 +48,7 @@
 							<div class="col-lg-3 col-md-6">
 								<div class="feature-box media-box fbox-bg h-100">
 									<div class="fbox-media">
-										<a href="#"><img src="demos/pet/images/services/1.jpg" alt="Featured Box Image"></a>
+										<a href="#"><img src="{{ asset('assets/greensheiled/LB2.png')}}" alt="Featured Box Image"></a>
 									</div>
 									<div class="fbox-content border-0">
 										<h3 class="text-transform-none ls-0 fw-semibold">Adopt a Dog<span class="subtitle fw-light ls-0">Globally parallel task premium infomediaries</span></h3>

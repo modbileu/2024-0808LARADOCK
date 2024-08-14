@@ -30,7 +30,7 @@
                             <td>
                                 @if($Merchandise->status == 'C')
                                     <span class="label label-default">
-                                        編輯中
+                                        建立中
                                     </span>
                                 @else
                                     <span class="label label-success">

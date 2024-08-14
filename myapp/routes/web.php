@@ -20,7 +20,7 @@ Route::group(['prefix'=> 'user'], function () {
 });
 
 Route::group(['prefix'=> 'merchandise'], function () {
-    Route::get('manage', 'App\Http\Controllers\MerchandiseController@MerchandiseManage')->name('merchandise.manage');;
+    Route::get('manage', 'App\Http\Controllers\MerchandiseController@MerchandiseManage')->name('merchandise.manage');
     Route::get('create', 'App\Http\Controllers\MerchandiseController@MerchandiseCreate')->middleware(AuthUserAdminMiddleware::class);
 
     Route::group(['prefix' => '{merchandise_id}'], function () {
