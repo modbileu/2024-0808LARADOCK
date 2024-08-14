@@ -47,8 +47,8 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html">
-								<img class="logo-default" src="{{ asset('assets/greensheiled/logo.png')}}" alt="Canvas Logo">
+							<a href="{{route('user.auth.home')}}">
+								<img class="logo-default" src="{{asset('assets/greensheiled/logo.png')}}" alt="Canvas Logo">
 							</a>
 						</div><!-- #logo end -->
 						<div class="header-misc">
@@ -184,19 +184,18 @@
 
 									<div class="widget">
 
-										<img src="images/footer-widget-logo.png" alt="Image" class="footer-logo">
+										<img src="{{ asset('assets/greensheiled/logo.png')}}" alt="Image" class="footer-logo">
 
-										<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
+										<p>我們公司的宗旨為:讓顧客使用 <strong>最安全</strong>, <strong>無毒</strong> &amp; <strong>無添加</strong> 的健康油漆。</p>
 
 										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
 											<address>
-												<strong>Headquarters:</strong><br>
-												795 Folsom Ave, Suite 600<br>
-												San Francisco, CA 94107<br>
+												<strong>綠盾公司總部:</strong><br>
+												地址:高雄市鹽埕區大智路10段888號<br>
 											</address>
-											<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-											<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-											<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+											<abbr title="Phone Number"><strong>來電請打:</strong></abbr>0800-092-000<br>
+											<abbr title="free-contract"><strong>免費服務:</strong></abbr>(07)6520498<br>
+											<abbr title="Email Address"><strong>電子信箱:</strong></abbr>greensheiled@gglife.com
 										</div>
 
 									</div>
@@ -207,7 +206,7 @@
 
 									<div class="widget widget_links">
 
-										<h4>Blogroll</h4>
+										<h4>產品介紹</h4>
 
 										<ul>
 											<li><a href="https://codex.wordpress.org/">Documentation</a></li>
