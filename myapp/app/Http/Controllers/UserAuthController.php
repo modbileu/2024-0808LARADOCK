@@ -44,7 +44,7 @@ class UserAuthController extends Controller
             session()->put('user_id', $user->id);
             session()->put('user_email',$user->email);
             #導向到首頁(本來要做的)
-            return redirect('/user/auth/login');
+            return redirect('/user/auth/home');
         }else{
             echo '登入失敗';
             return redirect('/user/auth/login')
@@ -85,7 +85,7 @@ class UserAuthController extends Controller
                 'nickname' => $form_data['nickname'],
             ]);
         //dd($user);
-            return redirect('/user/auth/login');
+            return redirect('/user/auth/home');
         }
     }
 }
