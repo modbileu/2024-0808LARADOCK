@@ -15,6 +15,7 @@ Route::group(['prefix'=> 'user'], function () {
         Route::get('signout','App\Http\Controllers\UserAuthController@SignOut')->name('user.auth.signout');
         Route::get('home','App\Http\Controllers\UserAuthController@Home');
         Route::post('home','App\Http\Controllers\UserAuthController@HomeProcess')->name('user.auth.home');
+        
     });
 });
 

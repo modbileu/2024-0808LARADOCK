@@ -37,7 +37,7 @@
 								<div class="col-12 form-group">
 									<div class="d-flex justify-content-between">
 										<button class="button button-3d button-black m-0" id="login-form-submit" name="login-form-submit" value="login">登入</button>
-										<a href="#">忘記密碼</a>
+										<a href="{{route('user.auth.signup')}}">忘記密碼</a>
 									</div>
 								</div>
 							</form>

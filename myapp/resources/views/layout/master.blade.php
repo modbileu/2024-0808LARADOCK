@@ -22,6 +22,10 @@
 	<link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" href="{{asset('assets/demos/pet/pet.css')}}">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
 	<!-- Document Title
 	============================================= -->
 	<title>{{ $title }}</title>
