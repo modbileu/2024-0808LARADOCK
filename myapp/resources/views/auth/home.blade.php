@@ -10,9 +10,8 @@
 						<div class="container py-5">
 							<div class="emphasis-title dark m-0">
 
-								<h2 style="font-size: 40px; line-height: 1.4; font-weight: 600; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);">Dogs are not our whole Life,<br>But they make our Lives whole.</h2><br>
-								<p class="fw-light d-none d-md-block" style="font-size: 16px; opacity: .7;">Nisl blandit adipisci gravida blandit soluta, explicabo orci, distinctio <br>duis unde provident suspendisse orci? Recusandae! Proident,<br>quos do mi cupidatat.</p>
-								<br><em><small style="opacity: 0.4;">Every month a surprise gift*</small></em>
+								<h2 style="font-size: 40px; line-height: 1.4; font-weight: 600; text-shadow: 1px 1px 1px rgba(0, 100, 0, 1);">「選擇綠盾塗料，您不僅獲得無毒的健康油漆，也支持我們的 ESG 原則，讓我們共同推動環境保護和社會責任，為未來創造更美好的世界。」</h2><br>
+								<p class="fw-light d-none d-md-block" style="font-size: 16px; opacity: .7; text-shadow: 1px 1px 1px rgba(0, 0, 255, 1);">綠盾塗料，為環保而生，守護家園的每一面牆。</p>
 
 							</div>
 						</div>
