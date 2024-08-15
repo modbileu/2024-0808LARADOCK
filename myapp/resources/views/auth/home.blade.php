@@ -202,9 +202,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/3.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/P-080.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/3.jpg" alt="Gallery Thumb 3">
+							<img src="{{ asset('assets/greensheiled/P-080.png')}}" alt="Gallery Thumb 3">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -213,9 +213,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/4.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/P-090.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/4.jpg" alt="Gallery Thumb 4">
+							<img src="{{ asset('assets/greensheiled/P-090.png')}}" alt="Gallery Thumb 4">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -224,9 +224,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/5.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/P-226.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/5.jpg" alt="Gallery Thumb 5">
+							<img src="{{ asset('assets/greensheiled/P-226.png')}}" alt="Gallery Thumb 5">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -235,9 +235,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/6.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/P-255.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/6.jpg" alt="Gallery Thumb 6">
+							<img src="{{ asset('assets/greensheiled/P-255.png')}}" alt="Gallery Thumb 6">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -246,9 +246,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/7.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/P-800.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/7.jpg" alt="Gallery Thumb 7">
+							<img src="{{ asset('assets/greensheiled/P-800.png')}}" alt="Gallery Thumb 7">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -257,9 +257,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/8.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/P-999.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/8.jpg" alt="Gallery Thumb 8">
+							<img src="{{ asset('assets/greensheiled/P-999.png')}}" alt="Gallery Thumb 8">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -268,9 +268,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/9.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/p617_0.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/9.jpg" alt="Gallery Thumb 9">
+							<img src="{{ asset('assets/greensheiled/p617_0.png')}}" alt="Gallery Thumb 9">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -279,9 +279,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/10.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/p731_0.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/10.jpg" alt="Gallery Thumb 10">
+							<img src="{{ asset('assets/greensheiled/p731_0.png')}}" alt="Gallery Thumb 10">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -290,9 +290,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/11.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/p916_01_0.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/11.jpg" alt="Gallery Thumb 11">
+							<img src="{{ asset('assets/greensheiled/p916_01_0.png')}}" alt="Gallery Thumb 11">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -301,9 +301,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/12.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/polyester_0.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/12.jpg" alt="Gallery Thumb 12">
+							<img src="{{ asset('assets/greensheiled/polyester_0.png')}}" alt="Gallery Thumb 12">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -317,63 +317,48 @@
 				<div class="section m-0 bg-transparent">
 					<div class="container">
 						<div class="heading-block text-center border-bottom-0 mx-auto" style="max-width: 640px">
-							<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 36px;">Our Products</h3>
-							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur dolorum, voluptatum possimus temporibus vel.</span>
+							<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 36px;">我們的產品價格</h3>
+							<span>以我們對顧客的尊敬，為了讓顧客省下更多的錢。我們將會以最為低廉的價格賣給客戶品質最好的產品</span>
 						</div>
 						<div class="row mt-5">
 							<div class="col-lg-5 d-none d-lg-block">
-								<img src="demos/pet/images/others/1.png" alt="Dogs">
+								<img src="{{ asset('assets/greenforever/forever.png')}}" alt="Dogs">
 							</div>
 							<div class="col-lg-7 col-md-12">
 								<div class="row">
 									<div class="col-md-4 col-6">
 										<div class="product">
 											<div class="product-image shadow-none">
-												<a href="#"><img src="demos/pet/images/products/1.jpg" alt="High-Heel Girl's Sandals"></a>
+												<a href="#"><img src="{{ asset('assets/greensheiled/p916_01_0.png')}}" alt="High-Heel Girl's Sandals"></a>
 											</div>
 											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="#">Natural Dog Food</a></h3></div>
-												<div class="product-price"><ins>$11.49</ins></div>
+												<div class="product-title"><h3><a href="#">P-916 磁磚專用接著底漆</a></h3></div>
+												<div class="product-price"><ins>請來電電洽</ins></div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-6">
 										<div class="product">
 											<div class="product-image shadow-none">
-												<a href="#"><img src="demos/pet/images/products/2.jpg" alt="High-Heel Girl's Sandals"></a>
+												<a href="#"><img src="{{ asset('assets/greensheiled/p731_0.png')}}" alt="High-Heel Girl's Sandals"></a>
 											</div>
 											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="#">Dry Dog Food</a></h3></div>
-												<div class="product-price"><ins>$13.99</ins></div>
+												<div class="product-title"><h3><a href="#">P-617 水性彩色彈性防水膠</a></h3></div>
+												<div class="product-price"><ins>請來電電洽</ins></div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-6">
 										<div class="product">
 											<div class="product-image shadow-none">
-												<a href="#"><img src="demos/pet/images/products/3.jpg" alt="High-Heel Girl's Sandals"></a>
+												<a href="#"><img src="{{ asset('assets/greensheiled/p617_0.png')}}" alt="High-Heel Girl's Sandals"></a>
 											</div>
 											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="#">Canvas Dog Food</a></h3></div>
-												<div class="product-price"><ins>$14.49</ins></div>
+												<div class="product-title"><h3><a href="#">P-617 水性彩色彈性防水膠</a></h3></div>
+												<div class="product-price"><ins>請來電電洽</ins></div>
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="section dark parallax m-0" style="padding: 140px 0;">
-					<img src="demos/pet/images/others/section-bg.jpg" class="parallax-bg">
-					<div class="container text-center">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="heading-block border-bottom-0 mb-0">
-									<div class="before-heading text-lowercase ls-1 text-white fw-normal">want to Adopt your a best friend?</div>
-									<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 32px;">Unconditional love is as close as your nearest Shelter.</h3>
-									<a href="#" class="button button-large button-circle button-border button-white button-light mt-4 ms-0">Get a Pet Now</a>
 								</div>
 							</div>
 						</div>
@@ -382,8 +367,8 @@
 
 				<div class="container mt-6">
 					<div class="heading-block text-center border-bottom-0 mx-auto" style="max-width: 640px">
-						<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 36px;">Need Help?</h3>
-						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur dolorum, voluptatum possimus temporibus vel.</span>
+						<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 36px;">我們的經銷商</h3>
+						<span>下列為我們的經銷商地址</span>
 					</div>
 					<div class="row contact-properties">
 						<div class="col-md-4">
