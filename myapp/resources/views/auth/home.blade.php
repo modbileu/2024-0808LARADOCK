@@ -372,39 +372,39 @@
 					</div>
 					<div class="row contact-properties">
 						<div class="col-md-4">
-							<a href="#" style="background: url('demos/pet/images/help/1.jpg') no-repeat center center; background-size: cover;">
+						<a href="https://maps.app.goo.gl/g9vmJ1skviVbisau9" style="background: url('{{ asset('assets/shop/shop1.jpg')}}') no-repeat center center; background-size: cover;">
 								<div class="vertical-middle dark text-center">
 									<div class="heading-block m-0 border-0">
-										<h3 class="text-capitalize fw-normal font-secondary">Hire a Pet Sitter</h3>
+										<h3 class="text-capitalize fw-normal font-secondary">昌來油漆防水工程行</h3>
 										<span style="margin-top: 100px; font-size: 17px; font-weight: 500;">
-											795 Folsom Ave, Suite 600<br>
-											San Francisco, CA 94107
+											拜訪地址:<br>
+											80755高雄市三民區同盟一路69號
 										</span>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="#" style="background: url('demos/pet/images/help/2.jpg') no-repeat center center; background-size: cover;">
+							<a href="https://maps.app.goo.gl/hntJxCSL7KLW9vNw5" style="background: url('{{ asset('assets/shop/shop2.jpg')}}') no-repeat center center; background-size: cover;">
 								<div class="vertical-middle dark text-center">
 									<div class="heading-block m-0 border-0">
-										<h3 class="text-capitalize fw-normal font-secondary">Report a Stray Dog</h3>
+										<h3 class="text-capitalize fw-normal font-secondary">高雄光揚油漆行</h3>
 										<span style="margin-top: 100px; font-size: 17px; font-weight: 500;">
-											call us<br>
-											+1-111-222-333
+											拜訪地址:<br>
+											807高雄市三民區九如一路197號
 										</span>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="#" style="background: url('demos/pet/images/help/3.jpg') no-repeat center center; background-size: cover;">
+							<a href="https://maps.app.goo.gl/mQ9XUL8WFZREz8vVA" style="background: url('{{ asset('assets/shop/shop3.jpg')}}') no-repeat center center; background-size: cover;">
 								<div class="vertical-middle dark text-center">
 									<div class="heading-block m-0 border-0">
-										<h3 class="text-capitalize fw-normal font-secondary">Report Harassment Dog</h3>
+										<h3 class="text-capitalize fw-normal font-secondary">陽光油漆行</h3>
 										<span style="margin-top: 100px; font-size: 17px; font-weight: 500;">
-											Email us<br>
-											info@canvas.com
+											拜訪地址:<br>
+											807高雄市三民區金鼎路299號
 										</span>
 									</div>
 								</div>
