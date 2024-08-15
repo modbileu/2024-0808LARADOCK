@@ -42,12 +42,12 @@
                             <td> {{ $Merchandise->remain_count }}</td>
                             <td>
                                 <a href="/merchandise/{{ $Merchandise->id }}/edit">
-                                    <i class="fas fa-band-aid"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
                                 </a>
                             </td>
                             <td>
                                 <a href="/merchandise/{{ $Merchandise->id }}/delete">
-                                    <i class="fas fa-band-aid"></i>
+                                    <i class="fa-solid fa-trash"></i>
                                 </a>
                             </td>
                         </tr>
