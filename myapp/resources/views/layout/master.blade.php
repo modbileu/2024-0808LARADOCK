@@ -73,6 +73,9 @@
 								<li class="meun-item">
 									<a class="menu-link" href = "{{route('user.auth.signout')}}"><div>登出</div></a>
 								</li>
+								<li class="meun-item">
+									<a class="menu-link" href = "{{route('merchandise.create')}}"><div>新增商品</div></a>
+								</li>
 								@else
 								<li>
 									<a class="menu-link" href = "{{route('user.auth.login')}}"><div>登入</div></a>

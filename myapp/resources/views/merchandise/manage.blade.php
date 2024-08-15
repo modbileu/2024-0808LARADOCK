@@ -12,7 +12,7 @@
                 <table class="table">
                     <tr>
                         <th>編號</th>
-                        <th>商品英文名稱</th>
+                        <th>商品名稱</th>
                         <th>圖片</th>
                         <th>狀態</th>
                         <th>價格</th>
