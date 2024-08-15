@@ -3,7 +3,7 @@
 @section('content')
 <section id="content">
 
-			<section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header" style="background: {{ asset('assets/greensheiled/LB2.png')}} center right no-repeat; background-size: cover;">
+			<section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header" style="background:  url('{{ asset('assets/greenforever/ocean.png')}}') center right no-repeat; background-size: cover;">
 				<div class="slider-inner">
 
 					<div class="vertical-middle">
@@ -175,14 +175,14 @@
 				<div class="section mb-0">
 					<div class="heading-block text-center border-bottom-0 mb-0 mx-auto" style="max-width: 640px">
 						<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 36px;">我們的產品圖示</h3>
-						<span>我們永遠致力於</span>
+						<span>我們永遠致力於，建築物防水堵漏、節能隔熱、自潔抗污、硬化地坪等需求，提供最完整的解決方案。</span>
 					</div>
 				</div>
 
 				<div class="masonry-thumbs row row-cols-6 grid-container" data-big="3" data-lightbox="gallery">
-					<a class="grid-item" href="demos/pet/images/gallery/1.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/LB2.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/1.jpg" alt="Gallery Thumb 1">
+							<img src="{{ asset('assets/greensheiled/LB2.png')}}" alt="Gallery Thumb 1">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -191,9 +191,9 @@
 							</div>
 						</div>
 					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/2.jpg" data-lightbox="gallery-item">
+					<a class="grid-item" href="{{ asset('assets/greensheiled/P-030.png')}}" data-lightbox="gallery-item">
 						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/2.jpg" alt="Gallery Thumb 2">
+							<img src="{{ asset('assets/greensheiled/P-030.png')}}" alt="Gallery Thumb 2">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
@@ -304,39 +304,6 @@
 					<a class="grid-item" href="demos/pet/images/gallery/12.jpg" data-lightbox="gallery-item">
 						<div class="grid-inner">
 							<img src="demos/pet/images/gallery/thumbs/12.jpg" alt="Gallery Thumb 12">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/13.jpg" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/13.jpg" alt="Gallery Thumb 13">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/14.jpg" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/14.jpg" alt="Gallery Thumb 14">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="demos/pet/images/gallery/15.jpg" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="demos/pet/images/gallery/thumbs/15.jpg" alt="Gallery Thumb 15">
 							<div class="bg-overlay">
 								<div class="bg-overlay-content dark">
 									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
