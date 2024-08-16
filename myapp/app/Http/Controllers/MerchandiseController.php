@@ -91,7 +91,7 @@ class MerchandiseController extends Controller
                 $Merchandise->photo = url($Merchandise->photo);
             }
         }
-
+        //dd($MerchandisePaginate) ;
         $binding = [
             'title' => '商品管理',
             'MerchandisePaginate'=> $MerchandisePaginate,
