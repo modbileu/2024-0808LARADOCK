@@ -36,11 +36,11 @@
 								<div class="col-lg-3 col-md-6">
 									<div class="feature-box media-box fbox-bg h-100">
 										<div class="fbox-media">
-											<a href="#"><img src="{{ asset($Merchandise->photo) }}" alt="{{ $Merchandise->name }}"></a>
+											<a href="{{ route('merchandise.thing', ['merchandise_id' => $Merchandise->id]) }}"><img src="{{ asset($Merchandise->photo) }}" alt="{{ $Merchandise->name }}"></a>
 										</div>
 										<div class="fbox-content border-0">
-											<h3 class="text-transform-none ls-0 fw-semibold">{{$Merchandise->name}}<span class="subtitle fw-light ls-0">結合水性單液產品環保好操作特性並媲美聚脲材質膜性。</span></h3>
-											<a href="#" class="button-link border-0 color">閱讀更多</a>
+											<h3 class="text-transform-none ls-0 fw-semibold">{{$Merchandise->name}}<span class="subtitle fw-light ls-0">{{ $Merchandise->introduction }}</span></h3>
+											<a href="{{ route('merchandise.thing', ['merchandise_id' => $Merchandise->id]) }}" class="button-link border-0 color">閱讀更多</a>
 										</div>
 									</div>
 								</div>
@@ -57,138 +57,19 @@
 				</div>
 
 				<div class="masonry-thumbs row row-cols-6 grid-container" data-big="3" data-lightbox="gallery">
-					<a class="grid-item" href="{{ asset('assets/greensheiled/LB2.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/LB2.png')}}" alt="Gallery Thumb 1">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+					@foreach ($MerchandisePaginate as $Merchandise)
+						<a class="grid-item" href="{{ asset($Merchandise->photo) }}" data-lightbox="gallery-item">
+							<div class="grid-inner">
+								<img src="{{ asset($Merchandise->photo) }}" alt="Gallery Thumb 1">
+								<div class="bg-overlay">
+									<div class="bg-overlay-content dark">
+										<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
+									</div>
+									<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/P-030.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/P-030.png')}}" alt="Gallery Thumb 2">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/P-080.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/P-080.png')}}" alt="Gallery Thumb 3">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/P-090.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/P-090.png')}}" alt="Gallery Thumb 4">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/P-226.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/P-226.png')}}" alt="Gallery Thumb 5">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/P-255.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/P-255.png')}}" alt="Gallery Thumb 6">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/P-800.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/P-800.png')}}" alt="Gallery Thumb 7">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/P-999.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/P-999.png')}}" alt="Gallery Thumb 8">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/p617_0.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/p617_0.png')}}" alt="Gallery Thumb 9">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/p731_0.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/p731_0.png')}}" alt="Gallery Thumb 10">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/p916_01_0.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/p916_01_0.png')}}" alt="Gallery Thumb 11">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
-					<a class="grid-item" href="{{ asset('assets/greensheiled/polyester_0.png')}}" data-lightbox="gallery-item">
-						<div class="grid-inner">
-							<img src="{{ asset('assets/greensheiled/polyester_0.png')}}" alt="Gallery Thumb 12">
-							<div class="bg-overlay">
-								<div class="bg-overlay-content dark">
-									<i class="uil uil-plus h4 mb-0" data-hover-animate="fadeIn"></i>
-								</div>
-								<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
-							</div>
-						</div>
-					</a>
+						</a>
+					@endforeach
 				</div>
 
 				<div class="section m-0 bg-transparent">

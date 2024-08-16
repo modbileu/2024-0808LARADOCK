@@ -109,15 +109,6 @@ class MerchandiseController extends Controller
     }
 
 
-    public function show($merchandise_id)
-    {
-        // 查找商品
-        $Merchandise = Merchandise::findOrFail($merchandise_id);
-
-        // 返回商品展示页面视图，并传递商品数据
-        return view('merchandise.show', compact('merchandise'));
-    }
-
     public function MerchandiseShop()
     {
         $MerchandisePaginate = Merchandise::OrderBy('created_at', 'desc')
@@ -137,5 +128,20 @@ class MerchandiseController extends Controller
         ];
 
         return view('merchandise.shop', $binding);
+    }
+
+    public function MerchandiseThing($merchandise_id)
+    {
+        // 获取商品
+        $merchandise = Merchandise::findOrFail($merchandise_id);
+
+        // 设置页面标题
+        $title = $merchandise->name;
+
+        // 返回视图并传递变量
+        return view('merchandise.thing', [
+            'merchandise' => $merchandise,
+            'title' => $title
+        ]);
     }
 }
