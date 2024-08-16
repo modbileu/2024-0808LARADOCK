@@ -73,8 +73,11 @@
 								<li class="meun-item">
 									<a class="menu-link" href = "{{route('user.auth.signout')}}"><div>登出</div></a>
 								</li>
-								<li class="meun-item">
-									<a class="menu-link" href = "{{route('merchandise.create')}}"><div>新增商品</div></a>
+								<li>
+									<a class="menu-link" href = "{{route('merchandise.create')}}"><div>新增商品(請設置管理者帳號)</div></a>
+								</li>
+								<li>
+									<a class="menu-link" href = "{{route('merchandise.shop')}}"><div>商品頁面</div></a>
 								</li>
 								@else
 								<li>
@@ -128,34 +131,7 @@
 									</ul>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="#"><div>Features</div></a>
-									<ul class="sub-menu-container">
-										<li class="menu-item">
-											<a class="menu-link" href="#"><div><i class="bi-hypnotize"></i>Sliders</div></a>
-											<ul class="sub-menu-container">
-												<li class="menu-item">
-													<a class="menu-link" href="slider-revolution.html"><div>Revolution Slider</div></a>
-													<ul class="sub-menu-container">
-														<li class="menu-item">
-															<a class="menu-link" href="rs-demos.html"><div>Premium Templates</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="slider-revolution.html"><div>Full Screen</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="slider-revolution-fullwidth.html"><div>Full Width</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="slider-revolution-kenburns.html"><div>Kenburns Effect</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="slider-revolution-html5-videos.html"><div>HTML5 Video</div></a>
-														</li>
-													</ul>
-												</ul>
-											</div>
-										</div>
-									</div>
+									<a class="menu-link" href="{{route('merchandise.manage')}}"><div>商品管理</div></a>
 								</li>
 							</ul>
 

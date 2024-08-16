@@ -13,7 +13,6 @@
                       method="post"
                       enctype="multipart/form-data"
                 >
-					{{ method_field('PUT') }}
                     @csrf
 
                     <div class="form-group">

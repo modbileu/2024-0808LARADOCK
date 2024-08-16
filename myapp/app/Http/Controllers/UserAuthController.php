@@ -7,6 +7,8 @@ use App\Shop\Entity\User;
 use Hash; 
 use Mail;
 
+use App\shop\Entity\Merchandise;
+
 class UserAuthController extends Controller
 {
     public function Login()
@@ -20,9 +22,29 @@ class UserAuthController extends Controller
 
     public function Home()
     {
+
+        // 每頁資料量
+        $row_per_page = 10;
+        // 撈取商品分頁資料
+        $MerchandisePaginate = Merchandise::OrderBy('created_at', 'desc')
+            ->paginate($row_per_page);
+
+        // 設定商品圖片網址
+        foreach ($MerchandisePaginate as &$Merchandise) {
+            if (!is_null($Merchandise->photo)) {
+                // 設定商品照片網址
+                $Merchandise->photo = url($Merchandise->photo);
+            }
+        }
+
         $binding = [
-        'title' => '綠盾油漆'
+            'title' => '綠盾油漆',
+            'MerchandisePaginate'=> $MerchandisePaginate,
         ];
+
+        // dd($MerchandisePaginate);
+
+
         return view('auth.home',$binding);
         
     }
@@ -44,7 +66,7 @@ class UserAuthController extends Controller
             echo '登入成功'; 
             session()->put('user_id', $user->id);
             session()->put('user_email',$user->email);
-            #導向到首頁(本來要做的)
+            
             return redirect('/user/auth/home');
         }else{
             echo '登入失敗';

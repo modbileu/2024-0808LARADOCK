@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-use App\Shop\Entity\Merchandise;
+use App\shop\Entity\Merchandise;
 use Image;
+use Illuminate\Http\Request;
 
 class MerchandiseController extends Controller
 {
@@ -80,11 +81,8 @@ class MerchandiseController extends Controller
     // 商品管理清單檢視
     public function MerchandiseManage()
     {
-        // 每頁資料量
-        $row_per_page = 10;
-        // 撈取商品分頁資料
         $MerchandisePaginate = Merchandise::OrderBy('created_at', 'desc')
-            ->paginate($row_per_page);
+            ->paginate();
 
         // 設定商品圖片網址
         foreach ($MerchandisePaginate as &$Merchandise) {
@@ -108,5 +106,36 @@ class MerchandiseController extends Controller
         $Merchandise = Merchandise::where('id', $merchandise_id)->delete();
 
         return redirect(route('merchandise.manage'));
+    }
+
+
+    public function show($merchandise_id)
+    {
+        // 查找商品
+        $Merchandise = Merchandise::findOrFail($merchandise_id);
+
+        // 返回商品展示页面视图，并传递商品数据
+        return view('merchandise.show', compact('merchandise'));
+    }
+
+    public function MerchandiseShop()
+    {
+        $MerchandisePaginate = Merchandise::OrderBy('created_at', 'desc')
+            ->paginate();
+
+        // 設定商品圖片網址
+        foreach ($MerchandisePaginate as &$Merchandise) {
+            if (!is_null($Merchandise->photo)) {
+                // 設定商品照片網址
+                $Merchandise->photo = url($Merchandise->photo);
+            }
+        }
+
+        $binding = [
+            'title' => '商品頁面',
+            'MerchandisePaginate'=> $MerchandisePaginate,
+        ];
+
+        return view('merchandise.shop', $binding);
     }
 }

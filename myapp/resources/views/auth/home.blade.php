@@ -32,141 +32,19 @@
 						<!-- Features colomns
 						============================================= -->
 						<div class="row align-items-stretch g-4">
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/LB2.png')}}" alt="LB防水油漆"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">水性氯丁PU-防水材料<span class="subtitle fw-light ls-0">結合水性單液產品環保好操作特性並媲美聚脲材質膜性。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/P-030.png')}}" alt="P-036C水性PU防漏膠"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-036C水性PU防漏膠<span class="subtitle fw-light ls-0">主要成分係由國外引進物性極優良水性PU樹脂與進口天然橡膠， 防水性特強的乳化瀝青經改質而成的共縮合物。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
+							@foreach ($MerchandisePaginate as $Merchandise)	
+								<div class="col-lg-3 col-md-6">
+									<div class="feature-box media-box fbox-bg h-100">
+										<div class="fbox-media">
+											<a href="#"><img src="{{ asset($Merchandise->photo) }}" alt="{{ $Merchandise->name }}"></a>
+										</div>
+										<div class="fbox-content border-0">
+											<h3 class="text-transform-none ls-0 fw-semibold">{{$Merchandise->name}}<span class="subtitle fw-light ls-0">結合水性單液產品環保好操作特性並媲美聚脲材質膜性。</span></h3>
+											<a href="#" class="button-link border-0 color">閱讀更多</a>
+										</div>
 									</div>
 								</div>
-							</div>
-
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/P-080.png')}}" alt="P-628 厚塗型彩色水性PU"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-628 厚塗型彩色水性PU<span class="subtitle fw-light ls-0">P-628彩色水性PU是以高分子材料為主要原料，是一種高彈性、水乳性、冷施工、單組分的防水塗料。該塗料固化成膜後能形成一種橡膠狀的彈性體，並且有優異的拉伸強度、延伸性及不透水性，而且色彩鮮豔、無毒、無味、無腐蝕性、不易燃燒。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/P-090.png')}}" alt="P-022C 水性防吐白底漆"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-022C 水性防吐白底漆<span class="subtitle fw-light ls-0">係本公司針對目前市場需求，並以革新科技所研發成功的水性乙烯防吐白底漆，特別是和鹼性水泥砂漿底材接著與封孔，也可作為外牆粗坯後、貼磁磚前，粗坯面的吐白華防治。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/P-226.png')}}" alt="P-226 單液型油性透明防水膠"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-226 單液型油性透明防水膠<span class="subtitle fw-light ls-0">P-226單液型油性透明防水膠，係耐黃變型油性聚胺酯類，壓克力等高分子共聚合的外牆透明塗料，具高滲透能力與高光澤性，可在牆面形成連續無縫的無色透明膜，而達到防水防滲效果。另有P-226-1，P-226-2系列產品。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/P-255.png')}}" alt="P-255 單液型彈泥"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-255 單液型彈泥<span class="subtitle fw-light ls-0">P-255係以高分子丙烯樹脂與特殊無機骨材和其它化學成分所研製而成的高彈性、高接著力的單液型彈泥，膜性強韌具有優越的底層追蹤性。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/P-800.png')}}" alt="P-800 逆轉滲"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-800 逆轉滲<span class="subtitle fw-light ls-0">P-800係水性無溶劑的乳霜型滲透劑，可逆滲入混凝土數公分以上（滲入深度依水泥含量有異）。可以長效維護外觀及預防壁癌產生，而不影響建物的物理性能（如透氣性），並可防止建物藻類、苔蘚等微生物的滋生污染。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/P-999.png')}}" alt="P-999 節能漆"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-999 節能漆<span class="subtitle fw-light ls-0">本產品為多功能性建築外觀面漆，添加最新奈米航太科技材料，具防水、隔熱、自潔、消音、節能等全方位功效，讓建築物保護力提升，能減少維護成本且符合ESG環保精神，為劃時代全效塗料產品。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/p617_0.png')}}" alt="P-617 水性彩色彈性防水膠"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-617 水性彩色彈性防水膠<span class="subtitle fw-light ls-0">P-617彩色彈性防水膠是以高分子材料為主原料，本產品是一種高彈性、單組分的防水塗料，該塗料固化成膜後能形成一種橡膠狀的彈性體，並且有優異的拉伸強度、延伸性及不透水性，而且色彩鮮艷、無味、無腐蝕性、不易燃燒。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/p731_0.png')}}" alt="P-731自潔型防水隔熱彈性漆"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-731自潔型防水隔熱彈性漆<span class="subtitle fw-light ls-0">係外牆防水塗料的突破性產品，主要以無機矽樹脂TiO2組成，具多功能性建築外觀面漆，可使被塗物具有防水、隔熱、自潔、保護、抗污等全面功效，讓建築物長保如新，延長使用壽命。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/p916_01_0.png')}}" alt="P-916 磁磚專用接著底漆"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">P-916 磁磚專用接著底漆<span class="subtitle fw-light ls-0">P-916係針對外牆磁磚、光滑面石材等無機材質，強化接著、附著能力所開發設計的透明有膜壓克力底漆。P-916的塗膜除了具有優良的附著性能外，更具有耐水和耐鹼的特性極適合用於外壁磁磚，再塗覆彈性防水膠時有超強力的接著，即使浸泡在水中亦有優異的接著能力，是外牆拉皮工程很適用的接著底漆。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box media-box fbox-bg h-100">
-									<div class="fbox-media">
-										<a href="#"><img src="{{ asset('assets/greensheiled/polyester_0.png')}}" alt="防水專用抗裂聚酯網"></a>
-									</div>
-									<div class="fbox-content border-0">
-										<h3 class="text-transform-none ls-0 fw-semibold">防水專用抗裂聚酯網<span class="subtitle fw-light ls-0">防水專用抗裂聚酯網係含有芳香族酸形成脂鍵的線型高分子物纖維，比國內一般聚酯纖維的滲透性、抗裂性等物性皆高很多。</span></h3>
-										<a href="#" class="button-link border-0 color">閱讀更多</a>
-									</div>
-								</div>
-							</div>
+							@endforeach
 						</div>
 					</div>
 				</div>
