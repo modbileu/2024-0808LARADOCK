@@ -81,8 +81,9 @@ class MerchandiseController extends Controller
     // 商品管理清單檢視
     public function MerchandiseManage()
     {
+        $row_per_page = 20;
         $MerchandisePaginate = Merchandise::OrderBy('created_at', 'desc')
-            ->paginate();
+            ->paginate($row_per_page);
 
         // 設定商品圖片網址
         foreach ($MerchandisePaginate as &$Merchandise) {
@@ -111,8 +112,9 @@ class MerchandiseController extends Controller
 
     public function MerchandiseShop()
     {
+        $row_per_page = 20;
         $MerchandisePaginate = Merchandise::OrderBy('created_at', 'desc')
-            ->paginate();
+            ->paginate($row_per_page);
 
         // 設定商品圖片網址
         foreach ($MerchandisePaginate as &$Merchandise) {

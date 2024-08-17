@@ -41,6 +41,7 @@
                         </tr>
                     @endforeach
                 </table>
+                {{ $MerchandisePaginate->links('vendor.pagination.custom-pagination') }}
             </div>
         </div>
     </div>

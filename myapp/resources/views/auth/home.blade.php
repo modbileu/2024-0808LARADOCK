@@ -45,6 +45,7 @@
 									</div>
 								</div>
 							@endforeach
+							{{ $MerchandisePaginate->links('vendor.pagination.custom-pagination') }}
 						</div>
 					</div>
 				</div>
@@ -76,7 +77,7 @@
 					<div class="container">
 						<div class="heading-block text-center border-bottom-0 mx-auto" style="max-width: 640px">
 							<h3 class="text-transform-none font-secondary fw-normal" style="font-size: 36px;">我們的產品價格</h3>
-							<span>以我們對顧客的尊敬，為了讓顧客省下更多的錢。我們將會以最為低廉的價格賣給客戶品質最好的產品</span>
+							<span>我們深知顧客的價值，並以最優惠的價格，為您提供卓越品質的產品，確保我們品牌的卓越價值始終如一</span>
 						</div>
 						<div class="row mt-5">
 							<div class="col-lg-5 d-none d-lg-block">
@@ -91,7 +92,7 @@
 											</div>
 											<div class="product-desc text-center">
 												<div class="product-title"><h3><a href="#">P-916 磁磚專用接著底漆</a></h3></div>
-												<div class="product-price"><ins>請來電電洽</ins></div>
+												<div class="product-price"><ins>如需資訊，請電洽</ins></div>
 											</div>
 										</div>
 									</div>
@@ -133,7 +134,7 @@
 						<a href="https://maps.app.goo.gl/g9vmJ1skviVbisau9" style="background: url('{{ asset('assets/shop/shop1.jpg')}}') no-repeat center center; background-size: cover;">
 								<div class="vertical-middle dark text-center">
 									<div class="heading-block m-0 border-0">
-										<h3 class="text-capitalize fw-normal font-secondary">昌來油漆防水工程行</h3>
+										<h3 class="text-capitalize fw-normal font-secondary">XX油漆防水工程行</h3>
 										<span style="margin-top: 100px; font-size: 17px; font-weight: 500;">
 											拜訪地址:<br>
 											80755高雄市三民區同盟一路69號
@@ -146,7 +147,7 @@
 							<a href="https://maps.app.goo.gl/hntJxCSL7KLW9vNw5" style="background: url('{{ asset('assets/shop/shop2.jpg')}}') no-repeat center center; background-size: cover;">
 								<div class="vertical-middle dark text-center">
 									<div class="heading-block m-0 border-0">
-										<h3 class="text-capitalize fw-normal font-secondary">高雄光揚油漆行</h3>
+										<h3 class="text-capitalize fw-normal font-secondary">高雄OO油漆行</h3>
 										<span style="margin-top: 100px; font-size: 17px; font-weight: 500;">
 											拜訪地址:<br>
 											807高雄市三民區九如一路197號
@@ -159,7 +160,7 @@
 							<a href="https://maps.app.goo.gl/mQ9XUL8WFZREz8vVA" style="background: url('{{ asset('assets/shop/shop3.jpg')}}') no-repeat center center; background-size: cover;">
 								<div class="vertical-middle dark text-center">
 									<div class="heading-block m-0 border-0">
-										<h3 class="text-capitalize fw-normal font-secondary">陽光油漆行</h3>
+										<h3 class="text-capitalize fw-normal font-secondary">OX油漆行</h3>
 										<span style="margin-top: 100px; font-size: 17px; font-weight: 500;">
 											拜訪地址:<br>
 											807高雄市三民區金鼎路299號
