@@ -24,6 +24,7 @@ Route::group(['prefix'=> 'merchandise'], function () {
     Route::get('manage', 'App\Http\Controllers\MerchandiseController@MerchandiseManage')->name('merchandise.manage')->middleware(AuthUserAdminMiddleware::class);
     Route::get('create', 'App\Http\Controllers\MerchandiseController@MerchandiseCreate')->name('merchandise.create')->middleware(AuthUserAdminMiddleware::class);
     Route::get('shop','App\Http\Controllers\MerchandiseController@MerchandiseShop')->name('merchandise.shop');
+    Route::get('search', 'App\Http\Controllers\MerchandiseController@MerchandiseSearch')->name('merchandise.search');
 
 
     Route::group(['prefix' => '{merchandise_id}'], function () {
@@ -31,5 +32,6 @@ Route::group(['prefix'=> 'merchandise'], function () {
         Route::post('/', 'App\Http\Controllers\MerchandiseController@MerchandiseEditProcess');
         Route::get('delete', 'App\Http\Controllers\MerchandiseController@MerchandiseDelete')->middleware(AuthUserAdminMiddleware::class);
         Route::get('thing', 'App\Http\Controllers\MerchandiseController@MerchandiseThing')->name('merchandise.thing');
+        
     });
 });

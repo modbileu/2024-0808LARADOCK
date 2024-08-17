@@ -146,4 +146,21 @@ class MerchandiseController extends Controller
             'title' => $title
         ]);
     }
+    
+    public function MerchandiseSearch(Request $request)
+    {
+        // 從請求中獲取搜尋關鍵字
+        $searchQuery = $request->input('q');
+        
+        // 根據搜尋關鍵字查詢商品
+        $merchandises = Merchandise::where('name', 'like', '%' . $searchQuery . '%')->get();
+        
+        $title = '搜尋結果';
+        // 傳遞查詢結果到視圖
+        return view('merchandise.search', [
+            'merchandises' => $merchandises,
+            'searchQuery' => $searchQuery,
+            'title' => $title
+        ]);
+    }
 }

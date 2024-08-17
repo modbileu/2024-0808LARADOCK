@@ -113,8 +113,8 @@
 
 						</nav><!-- #primary-menu end -->
 
-						<form class="top-search-form" action="search.html" method="get">
-							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+						<form class="top-search-form" action="{{ route('merchandise.search') }}" method="get">
+							<input type="text" name="q" class="form-control" value="{{ old('q') }}" placeholder="Type &amp; Hit Enter.." autocomplete="off">
 						</form>
 					</div>
 				</div>
