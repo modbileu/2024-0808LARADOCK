@@ -3,22 +3,47 @@
 @section('content')
 <section id="content">
 
-			<section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header" style="background:  url('{{ asset('assets/greenforever/ocean.png')}}') center right no-repeat; background-size: cover;">
-				<div class="slider-inner">
+<section id="slider" class="slider-element swiper_wrapper min-vh-60 min-vh-md-100">
+			<div class="slider-inner">
 
-					<div class="vertical-middle">
-						<div class="container py-5">
-							<div class="emphasis-title dark m-0">
-
-								<h2 style="font-size: 40px; line-height: 1.4; font-weight: 600; text-shadow: 1px 1px 1px rgba(0, 100, 0, 1);">「選擇綠盾塗料，您不僅獲得無毒的健康油漆，也支持我們的 ESG 原則，讓我們共同推動環境保護和社會責任，為未來創造更美好的世界。」</h2><br>
-								<p class="fw-light d-none d-md-block" style="font-size: 16px; opacity: .7; text-shadow: 1px 1px 1px rgba(0, 0, 255, 1);">綠盾塗料，為環保而生，守護家園的每一面牆。</p>
-
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption slider-caption-center">
+								<h2 data-animate="fadeInUp" style="color: #000000;">綠盾油漆—無毒健康</h2>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #C8102E;">「選擇綠盾塗料，您不僅獲得無毒的健康油漆，也是支持我們的 ESG 構想，讓我們共同推動環境保護和社會責任，為未來創造更美好的世界。」</p>
+								</div>
 							</div>
+							<div class="swiper-slide-bg" style="background:  url('{{ asset('assets/greenforever/pic1.jpg')}}');"></div>
+						</div>
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption slider-caption-center">
+								<h2 data-animate="fadeInUp" style="color: #004d00;">綠盾油漆-卓越品質，環保無憂</h2>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #ffffff;">「選擇綠盾塗料，全面解決建築需求，從防水堵漏到節能隔熱，我們為您的每個角落提供完美保護。」」</p>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background:  url('{{ asset('assets/greenforever/pic2.jpg')}}');"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="container">
+								<div class="slider-caption">
+									<h2 data-animate="fadeInUp" style="color: #ffffff;">綠盾油漆-全方位解決方案</h2>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #ffffff;">選擇綠盾塗料，高效能與低環境影響的結合，致力於為您創造更美好的居住和工作環境，每一寸塗料都經過精心設計，為您的空間提供無憂的保護和美觀</p>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background:  url('{{ asset('assets/greenforever/pic3.jpg')}}');"></div>
 						</div>
 					</div>
-
+					<div class="slider-arrow-left"><i class="uil uil-angle-left-b"></i></div>
+					<div class="slider-arrow-right"><i class="uil uil-angle-right-b"></i></div>
+					<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
 				</div>
-			</section>
+
+			</div>
+		</section>
+
 			<div class="content-wrap pt-0">
 		
 				<div class="section m-0" style="background-color: #eef2f5;">
@@ -88,10 +113,10 @@
 									<div class="col-md-4 col-6">
 										<div class="product">
 											<div class="product-image shadow-none">
-												<a href="#"><img src="{{ asset('assets/greensheiled/p916_01_0.png')}}" alt="High-Heel Girl's Sandals"></a>
+												<a href="{{ route('merchandise.thing', ['merchandise_id' => 11]) }}"><img src="{{ asset('assets/greensheiled/p916_01_0.png')}}" alt="High-Heel Girl's Sandals"></a>
 											</div>
 											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="#">P-916 磁磚專用接著底漆</a></h3></div>
+												<div class="product-title"><h3><a href="{{ route('merchandise.thing', ['merchandise_id' => 11]) }}">P-916磁磚專用接著底漆</a></h3></div>
 												<div class="product-price"><ins>如需資訊，請電洽</ins></div>
 											</div>
 										</div>
@@ -99,22 +124,22 @@
 									<div class="col-md-4 col-6">
 										<div class="product">
 											<div class="product-image shadow-none">
-												<a href="#"><img src="{{ asset('assets/greensheiled/p731_0.png')}}" alt="High-Heel Girl's Sandals"></a>
+												<a href="{{ route('merchandise.thing', ['merchandise_id' => 10]) }}"><img src="{{ asset('assets/greensheiled/p731_0.png')}}" alt="High-Heel Girl's Sandals"></a>
 											</div>
 											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="#">P-617 水性彩色彈性防水膠</a></h3></div>
-												<div class="product-price"><ins>請來電電洽</ins></div>
+												<div class="product-title"><h3><a href="{{ route('merchandise.thing', ['merchandise_id' => 10]) }}">P-731自潔型防水隔熱彈性漆</a></h3></div>
+												<div class="product-price"><ins>如需資訊，請電洽</ins></div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-6">
 										<div class="product">
 											<div class="product-image shadow-none">
-												<a href="#"><img src="{{ asset('assets/greensheiled/p617_0.png')}}" alt="High-Heel Girl's Sandals"></a>
+												<a href="{{ route('merchandise.thing', ['merchandise_id' => 9]) }}"><img src="{{ asset('assets/greensheiled/p617_0.png')}}" alt="High-Heel Girl's Sandals"></a>
 											</div>
 											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="#">P-617 水性彩色彈性防水膠</a></h3></div>
-												<div class="product-price"><ins>請來電電洽</ins></div>
+												<div class="product-title"><h3><a href="{{ route('merchandise.thing', ['merchandise_id' => 9]) }}">P-617水性彩色彈性防水膠</a></h3></div>
+												<div class="product-price"><ins>如需資訊，請電洽</ins></div>
 											</div>
 										</div>
 									</div>

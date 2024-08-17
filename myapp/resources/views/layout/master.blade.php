@@ -24,8 +24,7 @@
 
 	<link rel="stylesheet" href="{{asset('assets/demos/pet/pet.css')}}">
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/css/swiper.css')}}">
 	<!-- Document Title
 	============================================= -->
 	<title>{{ $title }}</title>
@@ -39,7 +38,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header">
+		<header id="header" class="dark">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
@@ -89,46 +88,6 @@
 								@endif
 								<li class="menu-item">
 									<a class="menu-link" href="{{route('user.auth.home')}}"><div>主頁</div></a>
-									<ul class="sub-menu-container">
-										<li class="menu-item">
-											<a class="menu-link" href="niche-demos.html"><div>Niche Demos</div></a>
-										</li>
-										<li class="menu-item">
-											<a class="menu-link" href="onepage-demos.html"><div>One-Page Demos</div></a>
-										</li>
-										<li class="menu-item">
-											<a class="menu-link" href="blocks.html"><div>Blocks</div></a>
-										</li>
-										<li class="menu-item mega-menu mega-menu-small">
-											<a class="menu-link" href="#"><div>Extras</div></a>
-											<div class="mega-menu-content">
-												<div class="row mx-0">
-													<ul class="sub-menu-container mega-menu-column col">
-														<li class="menu-item">
-															<a class="menu-link" href="index-wedding.html"><div>Wedding</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="index-restaurant.html"><div>Restaurant</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="index-events.html"><div>Events</div></a>
-														</li>
-													</ul>
-													<ul class="sub-menu-container mega-menu-column col">
-														<li class="menu-item">
-															<a class="menu-link" href="index-parallax.html"><div>Parallax</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="index-app-showcase.html"><div>App Showcase</div></a>
-														</li>
-														<li class="menu-item">
-															<a class="menu-link" href="index-boxed.html"><div>Boxed Layout</div></a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</li>
-									</ul>
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{route('merchandise.manage')}}"><div>商品管理</div></a>
@@ -166,8 +125,8 @@
 										<img src="{{ asset('assets/greensheiled/logo.png')}}" alt="Image" class="footer-logo">
 
 										<p>我們公司的宗旨為:讓顧客使用 <strong>最安全</strong>, <strong>無毒</strong> &amp; <strong>無添加</strong> 的健康油漆。</p>
-
-										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+										
+										<div style="background: url('{{ asset('assets/images/world-map.png')}}')  no-repeat center center; background-size: 100%;">
 											<address>
 												<strong>綠盾公司總部:</strong><br>
 												地址:高雄市鹽埕區大智路10段888號<br>
@@ -188,13 +147,13 @@
 										<h4>產品介紹</h4>
 
 										<ul>
-											<li><a href="https://codex.wordpress.org/">Documentation</a></li>
-											<li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-											<li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
-											<li><a href="https://wordpress.org/support/">Support Forums</a></li>
-											<li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
-											<li><a href="https://wordpress.org/news/">Canvas Blog</a></li>
-											<li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>
+											<li><a href="{{ route('merchandise.thing', ['merchandise_id' => 1]) }}">水性氯丁PU-防水材料</a></li>
+											<li><a href="{{ route('merchandise.thing', ['merchandise_id' => 2]) }}">P-036C水性PU防漏膠</a></li>
+											<li><a href="{{ route('merchandise.thing', ['merchandise_id' => 3]) }}">P-628 厚塗型彩色水性PU</a></li>
+											<li><a href="{{ route('merchandise.thing', ['merchandise_id' => 4]) }}">P-022C 水性防吐白底漆</a></li>
+											<li><a href="{{ route('merchandise.thing', ['merchandise_id' => 5]) }}">P-226 單液型油性透明防水膠s</a></li>
+											<li><a href="{{ route('merchandise.thing', ['merchandise_id' => 6]) }}">P-255 單液型彈泥</a></li>
+											<li><a href="{{ route('merchandise.thing', ['merchandise_id' => 7]) }}">P-800 逆轉滲</a></li>
 										</ul>
 
 									</div>
@@ -204,18 +163,18 @@
 								<div class="col-md-4">
 
 									<div class="widget">
-										<h4>Recent Posts</h4>
+										<h4>新產品</h4>
 
 										<div class="posts-sm row col-mb-30" id="post-list-footer">
 											<div class="entry col-12">
 												<div class="grid-inner row">
 													<div class="col">
 														<div class="entry-title">
-															<h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+															<h4><a href="{{ route('merchandise.thing', ['merchandise_id' => 12]) }}">(防水專用抗裂聚酯網)</a></h4>
 														</div>
 														<div class="entry-meta">
 															<ul>
-																<li>10th July 2021</li>
+																<li>2024/08/16</li>
 															</ul>
 														</div>
 													</div>
@@ -226,26 +185,11 @@
 												<div class="grid-inner row">
 													<div class="col">
 														<div class="entry-title">
-															<h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
+															<h4><a href="{{ route('merchandise.thing', ['merchandise_id' => 11]) }}">(磁磚專用接著底漆)</a></h4>
 														</div>
 														<div class="entry-meta">
 															<ul>
-																<li>10th July 2021</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="entry col-12">
-												<div class="grid-inner row">
-													<div class="col">
-														<div class="entry-title">
-															<h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
-														</div>
-														<div class="entry-meta">
-															<ul>
-																<li>10th July 2021</li>
+																<li>2024/08/17</li>
 															</ul>
 														</div>
 													</div>
@@ -267,13 +211,13 @@
 
 										<div class="row col-mb-30">
 											<div class="col-lg-6">
-												<div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-												<h5 class="mb-0">Total Downloads</h5>
+												<div class="counter counter-small"><span data-from="50" data-to="30678" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+												<h5 class="mb-0">造訪人數</h5>
 											</div>
 
 											<div class="col-lg-6">
-												<div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-												<h5 class="mb-0">Clients</h5>
+												<div class="counter counter-small"><span data-from="0" data-to="200" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+												<h5 class="mb-0">客戶</h5>
 											</div>
 										</div>
 
@@ -282,13 +226,13 @@
 
 								<div class="col-md-5 col-lg-12">
 									<div class="widget subscribe-widget">
-										<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+										<h5>想要知道我們的最新產品消息?</h5>
 										<div class="widget-subscribe-form-result"></div>
 										<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
 											<div class="input-group mx-auto">
 												<div class="input-group-text"><i class="bi-envelope-plus"></i></div>
-												<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-												<button class="btn btn-success" type="submit">Subscribe</button>
+												<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="輸入你的電子郵件">
+												<button class="btn btn-success" type="submit">訂閱我們</button>
 											</div>
 										</form>
 									</div>
@@ -299,18 +243,18 @@
 
 										<div class="row col-mb-30">
 											<div class="col-6 col-md-12 col-lg-6 d-flex align-items-center">
-												<a href="#" class="social-icon text-white border-transparent bg-facebook me-2 mb-0 float-none">
+												<a href="https://zh-tw.facebook.com/" class="social-icon text-white border-transparent bg-facebook me-2 mb-0 float-none">
 													<i class="fa-brands fa-facebook-f"></i>
 													<i class="fa-brands fa-facebook-f"></i>
 												</a>
-												<a href="#" class="ms-1"><small class="d-block"><strong>Like Us</strong><br>on Facebook</small></a>
+												<a href="https://zh-tw.facebook.com/" class="ms-1"><small class="d-block"><strong>Like Us</strong><br>on Facebook</small></a>
 											</div>
 											<div class="col-6 col-md-12 col-lg-6 d-flex align-items-center">
 												<a href="#" class="social-icon text-white border-transparent bg-rss me-2 mb-0 float-none">
 													<i class="fa-solid fa-rss"></i>
 													<i class="fa-solid fa-rss"></i>
 												</a>
-												<a href="#" class="ms-1"><small class="d-block"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+												<a href="{{route('user.auth.home')}}" class="ms-1"><small class="d-block"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
 											</div>
 										</div>
 
@@ -334,54 +278,19 @@
 					<div class="row col-mb-30">
 
 						<div class="col-md-6 text-center text-md-start">
-							Copyrights &copy; 2023 All Rights Reserved by Canvas Inc.<br>
-							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+							Copyrights &copy; 2024 All Rights Reserved by 金絲猴 Inc.<br>
+							<div class="copyright-links"><a href="{{route('user.auth.home')}}">首頁</a> / <a href="{{route('user.auth.login')}}">登入頁面</a></div>
 						</div>
 
 						<div class="col-md-6 text-center text-md-end">
 							<div class="d-flex justify-content-center justify-content-md-end mb-2">
-								<a href="#" class="social-icon border-transparent si-small h-bg-facebook">
+								<a href="https://zh-tw.facebook.com/" class="social-icon border-transparent si-small h-bg-facebook">
 									<i class="fa-brands fa-facebook-f"></i>
 									<i class="fa-brands fa-facebook-f"></i>
-								</a>
-
-								<a href="#" class="social-icon border-transparent si-small h-bg-twitter">
-									<i class="fa-brands fa-twitter"></i>
-									<i class="fa-brands fa-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon border-transparent si-small h-bg-google">
-									<i class="fa-brands fa-google"></i>
-									<i class="fa-brands fa-google"></i>
-								</a>
-
-								<a href="#" class="social-icon border-transparent si-small h-bg-pinterest">
-									<i class="fa-brands fa-pinterest-p"></i>
-									<i class="fa-brands fa-pinterest-p"></i>
-								</a>
-
-								<a href="#" class="social-icon border-transparent si-small h-bg-vimeo">
-									<i class="fa-brands fa-vimeo-v"></i>
-									<i class="fa-brands fa-vimeo-v"></i>
-								</a>
-
-								<a href="#" class="social-icon border-transparent si-small h-bg-github">
-									<i class="fa-brands fa-github"></i>
-									<i class="fa-brands fa-github"></i>
-								</a>
-
-								<a href="#" class="social-icon border-transparent si-small h-bg-yahoo">
-									<i class="fa-brands fa-yahoo"></i>
-									<i class="fa-brands fa-yahoo"></i>
-								</a>
-
-								<a href="#" class="social-icon border-transparent si-small me-0 h-bg-linkedin">
-									<i class="fa-brands fa-linkedin"></i>
-									<i class="fa-brands fa-linkedin"></i>
 								</a>
 							</div>
 
-							<i class="bi-envelope"></i> info@canvas.com <span class="middot">&middot;</span> <i class="fa-solid fa-phone"></i> +1-11-6541-6369 <span class="middot">&middot;</span> <i class="bi-skype"></i> CanvasOnSkype
+							<i class="bi-envelope"></i> greensheiled@gglife.com <span class="middot">&middot;</span> <i class="fa-solid fa-phone"></i> (07)6520498 <span class="middot">&middot;</span> <i class="bi-skype"></i> greensheiled
 						</div>
 
 					</div>

@@ -139,7 +139,7 @@ class MerchandiseController extends Controller
 
         // 设置页面标题
         $title = $merchandise->name;
-
+        //dd($merchandise);
         // 返回视图并传递变量
         return view('merchandise.thing', [
             'merchandise' => $merchandise,
