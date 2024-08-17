@@ -67,32 +67,49 @@
 						============================================= -->
 						<nav class="primary-menu">
 
-							<ul class="menu-container">
-								@if (session() -> has('user_id'))
-								<li class="meun-item">
-									<a class="menu-link" href = "{{route('user.auth.signout')}}"><div>登出</div></a>
+						<ul class="menu-container">
+							@if (session()->has('user_id'))
+								<li class="menu-item">
+									<a class="menu-link" href="{{ route('user.auth.signout') }}">
+										<div>登出</div>
+									</a>
 								</li>
-								<li>
-									<a class="menu-link" href = "{{route('merchandise.create')}}"><div>新增商品(請設置管理者帳號)</div></a>
-								</li>
-								<li>
-									<a class="menu-link" href = "{{route('merchandise.shop')}}"><div>商品頁面</div></a>
-								</li>
-								@else
-								<li>
-									<a class="menu-link" href = "{{route('user.auth.login')}}"><div>登入</div></a>
-								</li>
-								<li>
-									<a class="menu-link" href = "{{route('user.auth.signup')}}"><div>註冊</div></a>
-								</li>
+								@if (session('user_type') == 'A')
+									<li class="menu-item">
+										<a class="menu-link" href="{{ route('merchandise.create') }}">
+											<div>新增商品</div>
+										</a>
+									</li>
+									<li class="menu-item">
+										<a class="menu-link" href="{{ route('merchandise.manage') }}">
+											<div>商品管理</div>
+										</a>
+									</li>
 								@endif
 								<li class="menu-item">
-									<a class="menu-link" href="{{route('user.auth.home')}}"><div>主頁</div></a>
+									<a class="menu-link" href="{{ route('merchandise.shop') }}">
+										<div>商品頁面</div>
+									</a>
+								</li>
+							@else
+								<li class="menu-item">
+									<a class="menu-link" href="{{ route('user.auth.login') }}">
+										<div>登入</div>
+									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="{{route('merchandise.manage')}}"><div>商品管理</div></a>
+									<a class="menu-link" href="{{ route('user.auth.signup') }}">
+										<div>註冊</div>
+									</a>
 								</li>
-							</ul>
+							@endif
+							<li class="menu-item">
+								<a class="menu-link" href="{{ route('user.auth.home') }}">
+									<div>主頁</div>
+								</a>
+							</li>
+						</ul>
+
 
 						</nav><!-- #primary-menu end -->
 

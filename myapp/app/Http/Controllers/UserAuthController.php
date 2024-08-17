@@ -66,6 +66,7 @@ class UserAuthController extends Controller
             echo '登入成功'; 
             session()->put('user_id', $user->id);
             session()->put('user_email',$user->email);
+            session()->put('user_type',$user->type);
             return redirect('/user/auth/home');
         }else{
             echo '登入失敗';
