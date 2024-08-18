@@ -18,7 +18,7 @@
 								<i class="accordion-open bi-check-circle-fill"></i>
 							</div>
 							    <div class="accordion-title">
-								    登入帳號
+								    登入MyGreenShiled帳號
 							    </div>
 						    </div>
 						<div>

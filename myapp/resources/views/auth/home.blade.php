@@ -11,8 +11,8 @@
 						<div class="swiper-slide dark">
 							<div class="container">
 								<div class="slider-caption slider-caption-center">
-								<h2 data-animate="fadeInUp" style="color: #000000;">綠盾油漆—無毒健康</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #C8102E;">「選擇綠盾塗料，您不僅獲得無毒的健康油漆，也是支持我們的 ESG 構想，讓我們共同推動環境保護和社會責任，為未來創造更美好的世界。」</p>
+								<h2 data-animate="fadeInUp" style="color: #000000;">綠盾塗料—無毒健康</h2>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #C8102E;">選擇綠盾塗料，您不僅獲得無毒的健康油漆，也是支持我們的 ESG 構想，讓我們共同推動環境保護和社會責任，為未來創造更美好的世界</p>
 								</div>
 							</div>
 							<div class="swiper-slide-bg" style="background:  url('{{ asset('assets/greenforever/pic1.jpg')}}');"></div>
@@ -20,8 +20,8 @@
 						<div class="swiper-slide dark">
 							<div class="container">
 								<div class="slider-caption slider-caption-center">
-								<h2 data-animate="fadeInUp" style="color: #004d00;">綠盾油漆-卓越品質，環保無憂</h2>
-									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #ffffff;">「選擇綠盾塗料，全面解決建築需求，從防水堵漏到節能隔熱，我們為您的每個角落提供完美保護。」」</p>
+								<h2 data-animate="fadeInUp" style="color: #004d00;">綠盾塗料-卓越品質，環保無憂</h2>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #ffffff;">選擇綠盾塗料，全面解決建築需求，從防水堵漏到節能隔熱，我們為您的每個角落提供完美保護</p>
 								</div>
 							</div>
 							<div class="swiper-slide-bg" style="background:  url('{{ asset('assets/greenforever/pic2.jpg')}}');"></div>
@@ -29,7 +29,7 @@
 						<div class="swiper-slide">
 							<div class="container">
 								<div class="slider-caption">
-									<h2 data-animate="fadeInUp" style="color: #ffffff;">綠盾油漆-全方位解決方案</h2>
+									<h2 data-animate="fadeInUp" style="color: #ffffff;">綠盾塗料-全方位解決方案</h2>
 									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200" style="color: #ffffff;">選擇綠盾塗料，高效能與低環境影響的結合，致力於為您創造更美好的居住和工作環境，每一寸塗料都經過精心設計，為您的空間提供無憂的保護和美觀</p>
 								</div>
 							</div>
