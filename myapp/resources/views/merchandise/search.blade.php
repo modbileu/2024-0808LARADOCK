@@ -43,9 +43,9 @@
                                     <p style="font-size: 20px;">{{ $merchandise->introduction }}</p>
                                 </div>
                             </div>
-        </div>
-    </div>
-</div>
+                        </div>
+                    </div>
+                </div>
             @endforeach
         </div>
     @endif
