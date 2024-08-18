@@ -106,43 +106,29 @@
 						</div>
 						<div class="row mt-5">
 							<div class="col-lg-5 d-none d-lg-block">
-								<img src="{{ asset('assets/greenforever/forever.png')}}" alt="Dogs">
+								<img src="{{ asset('assets/greenforever/forever.png')}}" alt="plants">
 							</div>
 							<div class="col-lg-7 col-md-12">
 								<div class="row">
-									<div class="col-md-4 col-6">
-										<div class="product">
-											<div class="product-image shadow-none">
-												<a href="{{ route('merchandise.thing', ['merchandise_id' => 11]) }}"><img src="{{ asset('assets/greensheiled/p916_01_0.png')}}" alt="High-Heel Girl's Sandals"></a>
-											</div>
-											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="{{ route('merchandise.thing', ['merchandise_id' => 11]) }}">P-916磁磚專用接著底漆</a></h3></div>
-												<div class="product-price"><ins>如需資訊，請電洽</ins></div>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4 col-6">
-										<div class="product">
-											<div class="product-image shadow-none">
-												<a href="{{ route('merchandise.thing', ['merchandise_id' => 10]) }}"><img src="{{ asset('assets/greensheiled/p731_0.png')}}" alt="High-Heel Girl's Sandals"></a>
-											</div>
-											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="{{ route('merchandise.thing', ['merchandise_id' => 10]) }}">P-731自潔型防水隔熱彈性漆</a></h3></div>
-												<div class="product-price"><ins>如需資訊，請電洽</ins></div>
+									@foreach ($MerchandisePaginate->take(6) as $Merchandise)
+										<div class="col-md-4 col-6">
+											<div class="product">
+												<div class="product-image shadow-none">
+													<a href="{{ route('merchandise.thing', ['merchandise_id' => $Merchandise->id]) }}">
+														<img src="{{ asset($Merchandise->photo) }}" alt="High-Heel Girl's Sandals">
+													</a>
+												</div>
+												<div class="product-desc text-center">
+													<div class="product-title">
+														<h3><a href="{{ route('merchandise.thing', ['merchandise_id' => $Merchandise->id]) }}">{{$Merchandise->name}}</a></h3>
+													</div>
+													<div class="product-price">
+														<ins>如需資訊，請電洽</ins>
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="col-md-4 col-6">
-										<div class="product">
-											<div class="product-image shadow-none">
-												<a href="{{ route('merchandise.thing', ['merchandise_id' => 9]) }}"><img src="{{ asset('assets/greensheiled/p617_0.png')}}" alt="High-Heel Girl's Sandals"></a>
-											</div>
-											<div class="product-desc text-center">
-												<div class="product-title"><h3><a href="{{ route('merchandise.thing', ['merchandise_id' => 9]) }}">P-617水性彩色彈性防水膠</a></h3></div>
-												<div class="product-price"><ins>如需資訊，請電洽</ins></div>
-											</div>
-										</div>
-									</div>
+									@endforeach
 								</div>
 							</div>
 						</div>
